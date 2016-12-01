@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>log4j-cloudwatch-appender</name>
+    <description>log4j-cloudwatch-appender</description>
+    <url>https://github.com/gilt/log4j-cloudwatch-appender</url>
+
+    <groupId>org.parthenope</groupId>
+    <artifactId>log4j-cloudwatch-appender</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <url>https://github.com/parthenope/log4j-cloudwatch-appender</url>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/parthenope/log4j-cloudwatch-appender/blob/master/LICENSE.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:github.com/parthenope/log4j-cloudwatch-appender.git</connection>
+        <developerConnection>scm:git:git@github.com:parthenope/log4j-cloudwatch-appender.git</developerConnection>
+        <url>github.com/parthenope/log4j-cloudwatch-appender</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>nemo83</id>
+            <name>Giovanni Gargiulo</name>
+            <url>https://giannigar.wordpress.com/</url>
+        </developer>
+    </developers>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-logs</artifactId>
+            <version>1.11.29</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>
